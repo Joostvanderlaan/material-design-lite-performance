@@ -1,23 +1,8 @@
 body {
-  background-image: url('images/bg.jpg');
+  background-image: url('/images/bg.jpg');
   background-size: cover;
   background-attachment: fixed;
-  /* FIXME: Temp. workaround for vertical scrollbars */
   margin: 0;
-}
-
-body::before {
-    background-image: url('/images/head.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    content: '';
-    will-change: transform;
-    z-index: 1;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: fixed;
 }
 
 body .demo-blog {
@@ -193,7 +178,7 @@ body .demo-blog {
           order: -1;
 }
 .demo-blog .coffee-pic .mdl-card__media {
-  background-image: url('images/coffee.jpg');
+  background-image: url('/images/coffee.jpg');
 }
 .demo-blog .something-else .mdl-card__media {
   display: -webkit-box;
@@ -239,10 +224,10 @@ body .demo-blog {
   border-bottom-right-radius: 2px;
 }
 .demo-blog .on-the-road-again .mdl-card__media {
-  background-image: url('images/road.jpg');
+  background-image: url('/images/road.jpg');
 }
 .demo-blog .shopping .mdl-card__media {
-  background-image: url('images/shopping.jpg');
+  background-image: url('/images/shopping.jpg');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
@@ -306,7 +291,7 @@ body .demo-blog {
   background-color: transparent;
 }
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('images/road_big.jpg');
+  background-image: url('/images/road_big.jpg');
   height: 280px;
 }
 .demo-blog--blogpost .comments {
@@ -497,7 +482,7 @@ body .demo-blog {
 .demo-blog .minilogo {
   width: 44px;
   height: 44px;
-  background-image: url('images/avatar.png');
+  background-image: url('/images/avatar.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%;
