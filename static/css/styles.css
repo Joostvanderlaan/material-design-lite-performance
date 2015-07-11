@@ -219,9 +219,6 @@ body .main-container {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.main-container .on-the-road-again .mdl-card__media {
-  background-image: url('/images/road.jpg');
-}
 .main-container .blog__posts > .nav {
   margin: 12px 15px;
   display: -webkit-box;
@@ -284,7 +281,6 @@ body .main-container {
   background-color: transparent;
 }
 .blog--blogpost .blog__posts > .mdl-card .mdl-card__media {
-  background-image: url('/images/road_big.jpg');
   height: 280px;
 }
 .blog--blogpost .meta > * {
@@ -329,9 +325,7 @@ body .main-container {
   overflow: visible;
   z-index: 10;
 }
-.main-container .amazing .mdl-card__title {
-  background-color: #263238;
-}
+
 .main-container .minilogo {
   width: 44px;
   height: 44px;
@@ -386,4 +380,42 @@ body .main-container {
           align-items: center;
   background-color: white;
   box-sizing: border-box;
+}
+
+div.content strong{
+  font-weight: 900 !important;
+}
+
+div.content code{
+  max-width: 512px;
+}
+
+label.entypo-export:before{
+  visibility: hidden;
+  display: none;
+}
+
+div.share.sharer-0 label {
+  -webkit-transition: all .3s ease;
+  transition:         all .3s ease;
+  background: inherit;
+  border-radius: inherit;
+  color: inherit;
+  cursor: pointer;
+  font-size: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+div.share.sharer-0 label:hover {
+  opacity: inherit;
+}
+
+div.share.sharer-0 label span {
+  -webkit-font-smoothing: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding-left: inherit;
+  text-transform: inherit;
 }

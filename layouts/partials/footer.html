@@ -26,6 +26,9 @@
       <div class="mdl-layout__obfuscator"></div>
     </div>
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/js/share.min.js"></script>
   </body>
   <script>
     Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
@@ -39,6 +42,17 @@
       }
       el.addEventListener('click', function() {
         location.href = target;
+      });
+    });
+    
+    $(function() {
+      hljs.initHighlightingOnLoad();
+      
+      var share = new Share(".share", {
+        ui: {
+          flyout: "middle left",
+          button_text: "<i class='material-icons'>share</i>"
+        }
       });
     });
   </script>
