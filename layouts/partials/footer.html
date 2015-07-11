@@ -47,13 +47,7 @@
     
     $(function() {
       hljs.initHighlightingOnLoad();
-      
-      var share = new Share(".share", {
-        ui: {
-          flyout: "middle left",
-          button_text: "<i class='material-icons'>share</i>"
-        }
-      });
     });
   </script>
+  {{ partial "share.html" . }}
 </html>
