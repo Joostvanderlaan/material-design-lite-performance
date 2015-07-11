@@ -9,6 +9,10 @@
     <base href="{{ .Site.BaseURL }}">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    
+    <link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="RSS - {{ .Site.Title }}" />
     
     {{ partial "meta.html" . }} 
     

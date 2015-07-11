@@ -4,8 +4,7 @@
           {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           
           {{ range $index, $page := $paginator.Pages }}
-          <!-- FIX ME: add .IsHome when v0.15 is released -->
-              {{if and ((eq $paginator.PageNumber 1)) (and (eq $index 0) (eq (relURL .URL) ("/" | safeHTML)))}}
+              {{if and (eq $paginator.PageNumber 1) (eq $index 0)}}
                 <div class="mdl-card mdl-cell first-post mdl-cell--8-col">
                         {{ .Render "li" }}
                 </div>
