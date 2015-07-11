@@ -1,65 +1,20 @@
 <!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
-
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
-  
-  Modified by Samuel Debruyn for hugo (http://gohugo.io)
-  For details, see https://github.com/SamuelDebruyn/hugo-material-lite
--->
+{{ partial "notice.html" . }}
 <html lang="{{.Site.LanguageCode}}">
   <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <base href="{{ .Site.BaseURL }}">
     
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Material Design Lite</title>
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.{{ if isset .Site.Params "primary" }}{{ .Site.Params.primary }}{{ else }}cyan{{ end }}-{{ if isset .Site.Params "accent" }}{{ .Site.Params.accent }}{{ else }}indigo{{ end }}.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
     
-    <style type="text/css">
-    body{
-      {{ if isset .Site.Params "background" }}
-      background-image: url('{{ .Site.Params.background }}');
-      {{ else if isset .Site.Params "bgcolor" }}
-      background-color: {{ .Site.Params.bgcolor }};
-      {{ else }}
-      background-color: #424242;
-      {{ end }}
-    }
-    .main-container .minilogo{
-      {{ if isset .Site.Params "logo" }}
-      background-image: url('{{ .Site.Params.logo }}');
-      {{ else }}
-      background-image: url('/images/logo.png');
-      {{ end }}
-    }
-    </style>
+    {{ partial "meta.html" . }} 
+    
+    {{ partial "header-extra.html" . }} 
+
+    {{ partial "design.html" . }}    
     
   </head>
   <body>
