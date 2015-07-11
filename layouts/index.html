@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
         <div class="blog__posts mdl-grid">
-          {{ $paginator := .Paginator }}
+          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
           
           {{ range $index, $page := $paginator.Pages }}
           <!-- FIX ME: add .IsHome when v0.15 is released -->
@@ -10,29 +10,8 @@
                         {{ .Render "li" }}
                 </div>
                 
-                <div class="mdl-card author-box mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-                        <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
-                              {{ if isset .Site.Params "logo" }}
-                                <img src="{{ .Site.Params.logo }}" alt="logo">
-                              {{ else }}
-                                <img src="images/logo.png" alt="logo">
-                              {{ end }}
-                        </div>
-                        <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-                                <div>
-                                        {{with .Site.Params.author}}<strong>{{.}}</strong>{{end}}
-                                </div>
-                                <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-                                        <button class="mdl-menu__item mdl-js-ripple-effect">About</button>
-                                        <button class="mdl-menu__item mdl-js-ripple-effect">Message</button>
-                                        <button class="mdl-menu__item mdl-js-ripple-effect">Favorite</button>
-                                        <button class="mdl-menu__item mdl-js-ripple-effect">Search</button>
-                                </ul>
-                                <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-                                        <i class="material-icons">more_vert</i>
-                                </button>
-                        </div>
-                </div>
+                {{ partial "author-box.html" . }}
+                
               {{else}}
                       <div class="mdl-card mdl-cell mdl-cell--12-col">
                       {{ .Render "li" }}
