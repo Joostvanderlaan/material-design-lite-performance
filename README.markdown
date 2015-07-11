@@ -59,3 +59,14 @@ If you want to add extra tags to the `<head>` of your page, you can create a fil
 ## Contributing
 
 This theme is very basic and I welcome all contributions and feedback. Please create an issue or a pull request to contribute.
+
+## Demo
+
+### Code
+
+https://github.com/SamuelDebruyn/hugo-theme-example
+
+### Website
+
+http://materialexample.sa.muel.be/
+
