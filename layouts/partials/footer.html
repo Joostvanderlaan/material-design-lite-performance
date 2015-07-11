@@ -1,11 +1,25 @@
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
-            <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter"></button>
-            <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger"></button>
-            <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus"></button>
+            {{with .Site.Params.TwitterUser}}
+              <a href="https://twitter.com/{{.}}" target="_blank">
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter"></button>
+              </a>
+            {{end}}
+            {{with .Site.Params.Facebookuser}}
+              <a href="https://facebook.com/{{.}}" target="_blank">
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__fb"></button>
+              </a>
+            {{end}}
+            {{with .Site.Params.GooglePlusUser}}
+              <a href="https://google.com/+{{.}}" target="_blank">
+                <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus"></button>
+              </a>
+            {{end}}
           </div>
           <div class="mdl-mini-footer--right-section">
-            <button class="mdl-mini-footer--social-btn social-btn__share"><i class="material-icons">share</i></button>
+            {{with .Site.Params.copyright}}
+              <p>{{ . | safeHTML }}</p>
+            {{end}}
           </div>
         </footer>
       </main>
