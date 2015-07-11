@@ -1,19 +1,13 @@
         <footer class="mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             {{with .Site.Params.TwitterUser}}
-              <a href="https://twitter.com/{{.}}" target="_blank">
-                <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter"></button>
-              </a>
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__twitter" href="https://twitter.com/{{.}}" target="_blank" rel="me"></a>
             {{end}}
-            {{with .Site.Params.Facebookuser}}
-              <a href="https://facebook.com/{{.}}" target="_blank">
-                <button class="mdl-mini-footer--social-btn social-btn social-btn__fb"></button>
-              </a>
+            {{with .Site.Params.FacebookUser}}
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__fb"  href="https://facebook.com/{{.}}" target="_blank" rel="me"></a>
             {{end}}
             {{with .Site.Params.GooglePlusUser}}
-              <a href="https://google.com/+{{.}}" target="_blank">
-                <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus"></button>
-              </a>
+              <a class="mdl-mini-footer--social-btn mdl-button mdl-js-button social-btn social-btn__gplus" href="https://google.com/+{{.}}" target="_blank" rel="me"></a>
             {{end}}
           </div>
           <div class="mdl-mini-footer--right-section">
