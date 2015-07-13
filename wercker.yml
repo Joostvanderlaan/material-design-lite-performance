@@ -1,6 +1,6 @@
 box: debian
 build:
   steps:
-    - SamuelDebruyn/wercker-step-hugo-theme-check:
+    - samueldebruyn/wercker-step-hugo-theme-check:
         version: "0.14"
         name: material-lite
