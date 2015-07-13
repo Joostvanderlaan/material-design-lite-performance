@@ -3,4 +3,4 @@ build:
   steps:
     - samueldebruyn/hugo-theme-check:
         version: "0.14"
-        name: material-lite
+        theme: material-lite
