@@ -2,6 +2,8 @@
 
 This is a theme for [hugo](http://gohugo.io), a static site generator. It is based on the [blog template](http://www.getmdl.io/templates/) of Google's [Material Design Lite](http://www.getmdl.io).
 
+[![wercker status](https://app.wercker.com/status/242df4252d594182e3ccc5b3dac3205e/m/master "wercker status")](https://app.wercker.com/project/bykey/242df4252d594182e3ccc5b3dac3205e)
+
 ## License
 
 Like the original template, this theme's license is Apache 2.0.
