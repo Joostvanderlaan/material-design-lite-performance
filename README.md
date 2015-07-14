@@ -22,7 +22,7 @@ You can add a `description` and an `image` to a post or page using the front mat
 
 * posts can have featured images
 * header contains tags for [Open Graph](http://ogp.me/) and [Twitter Cards](https://dev.twitter.com/cards/overview)
-* links to profiles on Facebook, Twitter, Google Plu
+* links to profiles on Facebook, Twitter, Google Plus
 * customizable share button
 * pagination
 * customizable background image/color
