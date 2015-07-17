@@ -28,6 +28,7 @@ You can add a `description` and an `image` to a post or page using the front mat
 * customizable background image/color
 * customizable design (colors)
 * responsive design
+* code highlighting
 
 ### Configuration variables
 
