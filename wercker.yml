@@ -1,6 +1,5 @@
-box: switchback/git-debian
+box: samueldebruyn/hugo-build
 build:
   steps:
     - samueldebruyn/hugo-theme-check:
-        version: "0.14"
         theme: material-lite
