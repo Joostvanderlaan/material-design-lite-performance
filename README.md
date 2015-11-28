@@ -50,7 +50,7 @@ These are the supported site parameters:
 
 Create a file called *share.html* in *layouts/partials/* to override the configuration for the share button.
 
-This is the default configuration. This button uses a plugin called *carrot* to share to different networks.  recommend keeping the `ui` part as is and only modifying the `networks` part. Check [this link](https://github.com/carrot/share-button/wiki/Configuration-Options) for detailed instructions.
+This is the default configuration. This button uses a plugin called *carrot* to share to different networks. I recommend keeping the `ui` part as is and only modifying the `networks` part. Check [this link](https://github.com/carrot/share-button/wiki/Configuration-Options) for detailed instructions.
 
 	<script>
 		// See https://github.com/carrot/share-button/wiki/Configuration-Options
