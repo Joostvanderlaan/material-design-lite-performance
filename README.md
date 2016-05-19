@@ -6,6 +6,7 @@ This is a theme for [hugo](https://gohugo.io), a static site generator. It is ba
 
 ### TODO
 
+- [x] Use a service-worker.js for stellar performance
 - [x] Add top-menu (top right on desktop)
 - [x] inline SVG icons to replace external PNG
 - [x] Remove external background image
