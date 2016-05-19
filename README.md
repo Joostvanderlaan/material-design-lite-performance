@@ -2,7 +2,7 @@
 
 This is a theme for [hugo](http://gohugo.io), a static site generator. It is based on the [blog template](http://www.getmdl.io/templates/) of Google's [Material Design Lite](http://www.getmdl.io).
 
-[![wercker status](https://app.wercker.com/status/242df4252d594182e3ccc5b3dac3205e/m/master "wercker status")](https://app.wercker.com/project/bykey/242df4252d594182e3ccc5b3dac3205e)
+[![wercker status](https://app.wercker.com/status/7ad5c12955820fb82aa3e34021d07ac8/m "wercker status")](https://app.wercker.com/project/bykey/7ad5c12955820fb82aa3e34021d07ac8)
 
 ## License
 
