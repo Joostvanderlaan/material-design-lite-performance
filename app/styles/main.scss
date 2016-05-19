@@ -1,0 +1,18 @@
+@import "fonts";
+@import "../../bower_components/material-design-lite/material";
+@import "highlight";
+@import "iconfont";
+@import "styles";
+
+.mdl-layout__header-row .mdl-navigation__link {
+    color: rgb(238, 238, 238);
+}
+
+.mdl-layout__drawer-button {
+    color: rgb(238, 238, 238);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

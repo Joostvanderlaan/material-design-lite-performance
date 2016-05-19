@@ -1,0 +1,24 @@
+{
+  "name": "material-design-lite-performance",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Joost van der Laan <joostvanderlaan@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "https://joostvanderlaan.nl",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "material-design-lite": "^1.1.3",
+    "highlightjs": "^9.2.0"
+  }
+}

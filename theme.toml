@@ -1,14 +1,14 @@
 name = "Material Lite"
 license = "Apache License 2.0"
-licenselink = "https://github.com/SamuelDebruyn/hugo-material-lite/blob/master/LICENSE.md"
-description = "A hugo theme based on Google's Material Design Lite"
-homepage = "https://github.com/SamuelDebruyn/hugo-material-lite/"
-tags = ["material", "minimalistic", "lite", "google"]
-min_version = 0.14
+licenselink = "https://github.com/joostvanderlaan/hugo-material-design-lite-performance/blob/master/LICENSE.md"
+description = "A hugo theme optimized for performance & HTTP/2 based on Google's Material Design Lite"
+homepage = "https://github.com/joostvanderlaan/hugo-material-design-lite-performance/"
+tags = ["performance", "material", "design", "lite", "google"]
+min_version = 0.15
 
 [author]
-  name = "Samuel Debruyn"
-  homepage = "http://sa.muel.be"
+  name = "Joost van der Laan"
+  homepage = "https://joostvanderlaan.nl"
 
 # If porting an existing theme
 [original]
