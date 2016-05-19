@@ -1,14 +1,26 @@
-# Material Design Lite inspired theme for hugo
+# Performance Optimized Material Design Lite theme for Hugo
 
-This is a theme for [hugo](http://gohugo.io), a static site generator. It is based on the [blog template](http://www.getmdl.io/templates/) of Google's [Material Design Lite](http://www.getmdl.io).
+This is a theme for [hugo](https://gohugo.io), a static site generator. It is based on the [blog template](https://www.getmdl.io/templates/) of Google's [Material Design Lite](https://www.getmdl.io).
 
 [![wercker status](https://app.wercker.com/status/7ad5c12955820fb82aa3e34021d07ac8/m "wercker status")](https://app.wercker.com/project/bykey/7ad5c12955820fb82aa3e34021d07ac8)
 
-## License
+### TODO
 
-Like the original template, this theme's license is Apache 2.0.
+- [x] inline SVG icons to replace external PNG
+- [x] Remove external background image
+- [ ] Remove external font and CSS for share buttons (latest version of share buttons has that)
+- [ ] Set primary and accent color (with SASS)
+- [x] Use local Font (Roboto)
+- [x] Use local Font (Material Design Icons)
+- [x] Add Google Tag Manager (GTM) support
+- [x] Gulp integration (gets you minified and concatenated assets)
+- [ ] Auto reload & re-run Gulp
+- [ ] Add word count
 
-## Usage
+### Usage
+
+    cd hugo/themes
+    git clone https://github.com/Joostvanderlaan/material-design-lite-performance.git
 
 ### Content organization & features
 
@@ -18,7 +30,7 @@ This theme is optimized to use 2 content types: `post`s and `page`s. Pages are a
 
 You can add a `description` and an `image` to a post or page using the front matter.
 
-#### Some features
+### Some features
 
 * posts can have featured images
 * header contains tags for [Open Graph](http://ogp.me/) and [Twitter Cards](https://dev.twitter.com/cards/overview)
@@ -44,7 +56,7 @@ These are the supported site parameters:
 	primary = "indigo"
 	accent = "pink"
 
-*Primary* and *accent* define the colors of the design. Check [the MDL customizer](http://www.getmdl.io/customize/index.html) to see the supported colors.
+*Primary* and *accent* define the colors of the design. Check [the MDL customizer](https://www.getmdl.io/customize/index.html) to see the supported colors.
 
 ### Share button configuration
 
@@ -70,17 +82,18 @@ This is the default configuration. This button uses a plugin called *carrot* to 
 
 If you want to add extra tags to the `<head>` of your page, you can create a file called *header-extra.html* in *layouts/partials/* and add your extra content to that file.
 
-## Contributing
+### Contributing
 
-This theme is very basic and I welcome all contributions and feedback. Please create an issue or a pull request to contribute.
+You want to contribute? That's awesome! ❤ Please create an issue or a pull request to contribute.
 
-## Demo
+### Demo
+
+https://somedemolinkhere.joostvanderlaan.nl
 
 ### Code
 
-https://github.com/SamuelDebruyn/hugo-theme-example
+https://github.com/Joostvanderlaan/material-design-lite-performance
 
-### Website
+### License
 
-http://materialexample.sa.muel.be/
-
+Like the original template, this theme's license is Apache 2.0.
