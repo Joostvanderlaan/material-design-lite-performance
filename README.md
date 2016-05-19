@@ -6,6 +6,7 @@ This is a theme for [hugo](https://gohugo.io), a static site generator. It is ba
 
 ### TODO
 
+- [x] Add top-menu (top right on desktop)
 - [x] inline SVG icons to replace external PNG
 - [x] Remove external background image
 - [ ] Remove external font and CSS for share buttons (latest version of share buttons has that)
@@ -16,6 +17,7 @@ This is a theme for [hugo](https://gohugo.io), a static site generator. It is ba
 - [x] Gulp integration (gets you minified and concatenated assets)
 - [ ] Auto reload & re-run Gulp
 - [ ] Add word count
+- [ ] Test code highlighting
 
 ### Usage
 
@@ -46,15 +48,20 @@ You can add a `description` and an `image` to a post or page using the front mat
 
 These are the supported site parameters:
 
+```TOML
 	TwitterUser = "YourTwitterUsername"
 	FacebookUser = "YourFacebookUsername"
 	GooglePlusUser = "YourGooglePlusUsername"
-	copyright = "&copy; a short copyright statement"
-	author = "John Doe"
-	background = "a relative or absolute URL to a background image"
+	copyright = "&copy; 2016 A short copyright statement"
+	author = "Joost van der Laan"
+	background = "/images/beach-jl.jpg" # a relative or absolute URL to a background image
 	bgcolor = "a background color; will be ignored if you use background"
 	primary = "indigo"
 	accent = "pink"
+	# Tag of GA & GTM will hide if unset.
+	GoogleAnalytics = "UA-XXXXXXXX-X"
+	GoogleTagManager = "GTM-XXXXXX"
+```
 
 *Primary* and *accent* define the colors of the design. Check [the MDL customizer](https://www.getmdl.io/customize/index.html) to see the supported colors.
 
