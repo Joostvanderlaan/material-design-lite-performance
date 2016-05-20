@@ -242,11 +242,11 @@ Info(text);*/
 
 var exec = require('child-process-promise').exec;
 
-var cmd = 'cd ../.. && hugo -v';
+var cmd = 'cd ../.. && hugo -v'
 //      + ' --baseUrl="localhost"'
 //      + ' --config="../../config.toml"'
 //      + ' --source="../.."';
-//      + ' --destination="../../distributionmwaaah"';
+      + ' --destination="./build"';
 Debug('cmd: ' + cmd);
 
 return exec(cmd)
@@ -271,8 +271,8 @@ gulp.task('serve', ['hugothegreat', 'scripts', 'styles'], () => {
     // Note: this uses an unsigned certificate which on first access
     //       will present a certificate warning in the browser.
     // https: true,
-    server: ['.tmp', 'app', '../../public'], // public is where Hugo outputs its stuff
-    files: ['../../public/**'],
+    server: ['.tmp', 'app', '../../build'], // build is where Hugo outputs its stuff
+    files: ['../../build/**'],
     port: 3000
   });
 
