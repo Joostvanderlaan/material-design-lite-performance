@@ -50,18 +50,20 @@ You can add a `description` and an `image` to a post or page using the front mat
 These are the supported site parameters:
 
 ```TOML
-	TwitterUser = "YourTwitterUsername"
-	FacebookUser = "YourFacebookUsername"
-	GooglePlusUser = "YourGooglePlusUsername"
-	copyright = "&copy; 2016 A short copyright statement"
-	author = "Joost van der Laan"
-	background = "/images/beach-jl.jpg" # a relative or absolute URL to a background image
-	bgcolor = "a background color; will be ignored if you use background"
-	primary = "indigo"
-	accent = "pink"
-	# Tag of GA & GTM will hide if unset.
-	GoogleAnalytics = "UA-XXXXXXXX-X"
-	GoogleTagManager = "GTM-XXXXXX"
+	
+	[params]
+		TwitterUser = "YourTwitterUsername"
+		FacebookUser = "YourFacebookUsername"
+		GooglePlusUser = "YourGooglePlusUsername"
+		copyright = "&copy; 2016 A short copyright statement"
+		author = "Joost van der Laan"
+		background = "/images/beach-jl.jpg" # a relative or absolute URL to a background image
+		bgcolor = "a background color; will be ignored if you use background"
+		primary = "indigo"
+		accent = "pink"
+		# Tag of GA & GTM will hide if unset.
+		GoogleAnalytics = "UA-XXXXXXXX-X"
+		GoogleTagManager = "GTM-XXXXXX"
 ```
 
 *Primary* and *accent* define the colors of the design. Check [the MDL customizer](https://www.getmdl.io/customize/index.html) to see the supported colors.
