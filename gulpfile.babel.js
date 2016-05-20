@@ -209,3 +209,52 @@ gulp.task('generate-service-worker', ['copy-sw-scripts'], () => {
 // Load custom tasks from the `tasks` directory
 // Run: `npm install --save-dev require-dir` from the command-line
 // try { require('require-dir')('tasks'); } catch (err) { console.error(err); }
+
+
+// Generate hugo build into public folder (default)
+gulp.task('hugothegreat', () => {
+
+//******* Debugging  ***************
+// https://github.com/visionmedia/debug
+// This is gets fed into the global.js file.
+process.env.DEBUG_DIFF = 0;  // turn off millisecond diff (not working in current version of debug)
+
+var db = require('debug');
+// TODO add in ability to print objects as tables for use in debugging
+// var Table = require('easy-table')
+
+// comment an enable to disable that output.
+db.enable('Debug');
+// db.enable('Debug2');
+//db.enable('Info');
+// ********************
+
+//  These will be global functions, take note of the leading capitial.
+var Debug = db('Debug');  //  use in place of console.log for debugging
+var Debug2 = db('Debug2'); // use for more verbose stuff like stdout from a commandline
+var Info = db('Info'); // use for user information
+
+/*//uncomment to run examples
+var text ='this is a test';
+Debug(text);
+Debug2(text);
+Info(text);*/
+
+var exec = require('child-process-promise').exec;
+
+var cmd = 'cd ../.. && hugo -v';
+//      + ' --baseUrl="localhost"'
+//      + ' --config="../../config.toml"'
+//      + ' --source="../.."';
+//      + ' --destination="../../distributionmwaaah"';
+Debug('cmd: ' + cmd);
+
+return exec(cmd)
+.then(function (result) {
+  var stdout = result.stdout;
+  var stderr = result.stderr;
+  Debug('Hugo says: ', stdout);
+  Debug('stderr: ', stderr);
+ });
+
+});
