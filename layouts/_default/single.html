@@ -15,7 +15,7 @@
               <div>
                 {{with .Site.Params.author}}<strong>{{.}}</strong>{{end}}
                 <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-                    {{ .Date.Format "2 Jan 2006" }}
+                    {{ .Date.Format "2 Jan 2006" }} · {{ .ReadingTime }} min read · {{ .WordCount }} Words
                 </time>
               </div>
               <div class="section-spacer"></div>
